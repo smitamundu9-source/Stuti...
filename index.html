@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>For You 🤍</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;height:100%;font-family:Arial,sans-serif;background:#09030a;color:#fff}
+body{overflow:hidden}.app{height:100dvh;position:relative;overflow:hidden;background:radial-gradient(circle at 10% 10%,#8d164f55,transparent 30%),radial-gradient(circle at 90% 85%,#ff3d9950,transparent 28%),linear-gradient(145deg,#10030b,#35071f 52%,#09030a)}
+.orb{position:absolute;border-radius:50%;filter:blur(8px);opacity:.15;animation:f 7s ease-in-out infinite}.a{width:150px;height:150px;background:#ff4d9d;top:5%;left:-70px}.b{width:190px;height:190px;background:#9d39ff;right:-90px;bottom:8%;animation-delay:-3s}@keyframes f{50%{transform:translate(12px,-18px)}}
+.progress{position:absolute;top:15px;left:18px;right:18px;height:4px;background:#ffffff18;border-radius:9px;z-index:5}.bar{height:100%;width:33.33%;background:linear-gradient(90deg,#ff86c2,#fff);border-radius:9px;transition:.45s}
+.page{position:absolute;inset:0;padding:60px 22px 28px;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateX(28px);pointer-events:none;transition:.45s}.page.active{opacity:1;transform:none;pointer-events:auto}
+.card{width:min(100%,430px);padding:30px 24px 25px;border:1px solid #ffffff20;background:#ffffff10;backdrop-filter:blur(20px);border-radius:29px;box-shadow:0 25px 70px #0008}
+.kicker{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#ffb8db;font-weight:700;margin-bottom:14px}
+h1,h2{font-family:Georgia,serif;margin:0 0 17px;line-height:1.06}h1{font-size:40px}h2{font-size:31px}
+p{font-size:16px;line-height:1.65;color:#eee4eb;margin:0 0 15px}strong{color:#fff}
+.quote{padding:15px 16px;margin:19px 0;background:#ffffff0d;border-left:3px solid #ff82bb;border-radius:0 15px 15px 0;line-height:1.55}
+button{width:100%;padding:16px;border:0;border-radius:16px;background:linear-gradient(135deg,#ffd2e8,#ff82bc);color:#1a0712;font-weight:700;font-size:15px;cursor:pointer}.heart{font-size:40px;display:block;margin-bottom:10px}.badge{display:inline-block;padding:8px 11px;border-radius:99px;background:#ffffff10;color:#d9cbd3;font-size:12px;margin-bottom:17px}.small,.footer{font-size:12px;color:#aa9aa5;text-align:center;margin-top:13px}
+.video-wrap{margin:18px 0 20px;border-radius:20px;overflow:hidden;background:#000;border:1px solid #ffffff20;box-shadow:0 15px 35px #0006}.video-wrap video{display:block;width:100%;max-height:45vh;object-fit:cover}.video-caption{text-align:center;font-size:12px;color:#bdaeb7;margin-top:9px}.spark{position:absolute;width:5px;height:5px;border-radius:50%;background:#ffd5e9;animation:rise 6s linear infinite}@keyframes rise{0%{transform:translateY(110vh);opacity:0}20%{opacity:.7}100%{transform:translateY(-20vh);opacity:0}}
+@media(max-height:650px){.card{padding:23px 20px}p{font-size:14px;line-height:1.5}h1{font-size:34px}h2{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="app"><div class="orb a"></div><div class="orb b"></div>
+<div class="progress"><div class="bar" id="bar"></div></div>
+<div class="spark" style="left:12%;animation-delay:-1s"></div><div class="spark" style="left:35%;animation-delay:-4s"></div><div class="spark" style="left:70%;animation-delay:-2s"></div><div class="spark" style="left:88%;animation-delay:-5s"></div>
+
+<section class="page active" id="p1"><div class="card">
+<div class="kicker">okay… hear me out</div><span class="heart">🤍</span>
+<h1>My lovely Stuti,<br>forgive me? 🤍</h1>
+<p>I know why you got hurt. Sending you that reel about my female best friend leaving me was honestly one of those moments where my brain just clocked out. 😭</p>
+<p>And then I kept trying to fix it… somehow making the situation even worse. Very impressive work from me, honestly.</p>
+<div class="quote">I had one job: make things better. Somehow I chose the premium difficulty. 😭</div>
+<button type="button" id="next1">Okay, continue →</button><div class="small">No dramatic speech. Just me being honest.</div>
+</div></section>
+
+<section class="page" id="p2"><div class="card">
+<div class="badge">for the record · this matters</div>
+<h2>Let me make one thing clear.</h2>
+<p>That reel wasn't me saying I want you to leave, or that losing you wouldn't matter. Quite the opposite. I sent it without thinking, and I get why it hit differently than I intended.</p>
+<p>Because honestly, you're one of those people I don't want to casually lose from my life. You're my best friend, and somehow you've become one of my favourite parts of my everyday life. That's your fault, by the way. 👀</p>
+<p>And yes, you get angry, enter your “don't talk to me” mode, and make me work for forgiveness sometimes. But somehow, I'd still choose being your annoying best friend over not having you around.</p>
+<p><strong>Still worth it.</strong> Every single time.</p>
+<div class="video-wrap">
+  <video controls playsinline preload="metadata">
+    <source src="smile_video.mp4" type="video/mp4">
+    Your browser doesn't support this video.
+  </video>
+</div>
+<div class="video-caption">A tiny attempt to bring that smile back. 👀</div>
+<div class="quote">If I could unsend one thing right now, it'd be that reel. If I could keep one thing, it'd be every random conversation, stupid joke and little moment that somehow became normal with you. 🤍</div>
+<button type="button" id="next2">One last thing →</button>
+</div></section>
+
+<section class="page" id="p3"><div class="card">
+<div class="kicker">final statement</div><h2>Can I have my favourite person back? 👀</h2>
+<p>I'm genuinely sorry. Not the “SORRYYYY x 47” kind of sorry. The actual kind where I understand why it hurt you and why that reel was a bad move.</p>
+
+<p>One stupid reel shouldn't get to mess with something this special to me. 😭</p>
+<div class="quote"><strong>Forgive me, Stuti? 🤍</strong><br><br>I'll consider that the official return of my favourite person.</div>
+<button id="btn" onclick="forgiven()">Fine. You're forgiven 🤍</button>
+<div class="footer" id="result">No pressure… just hoping we're good again.</div>
+</div></section>
+</div>
+<script>
+(function () {
+  let page = 1;
+  const pages = Array.from(document.querySelectorAll('.page'));
+  const bar = document.getElementById('bar');
+
+  function show(n) {
+    if (n < 1 || n > pages.length) return;
+    pages.forEach(function (el, i) {
+      el.classList.toggle('active', i === n - 1);
+    });
+    bar.style.width = ((n / pages.length) * 100) + '%';
+    page = n;
+  }
+
+  document.getElementById('next1').addEventListener('click', function () {
+    show(2);
+  });
+
+  document.getElementById('next2').addEventListener('click', function () {
+    show(3);
+  });
+
+  document.getElementById('btn').addEventListener('click', function () {
+    document.getElementById('result').textContent =
+      "Okay good. That’s better. My favourite chaos department is officially back. ✨";
+    this.textContent = "Bestie privileges restored 🤍";
+  });
+
+  show(1);
+})();
+</script>
+</body></html>

@@ -1,0 +1,1 @@
+Open index.html in a browser. Mobile-first 3-page apology website.
